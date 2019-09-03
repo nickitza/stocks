@@ -1,27 +1,31 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {Container, Card, } from "semantic-ui-react"
+import {Container, Header, Card, } from "semantic-ui-react"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+  state = {companies: [], }
+
+  componentDidMount() {
+    //axios get
+    //update state
+  }
+
+  render(){
+    return(
+      <>
+        <Header>Companies</Header>
+        <hr />
+        <Card.Group>
+          <Card>
+            <Card.Content>
+              <Card.Header>{company.name}</Card.Header>
+            </Card.Content>
+          </Card>
+        </Card.Group>
+      </>
+    )
+  }
 }
 
 export default App;
