@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {Container, Card, } from "semantic-ui-react"
 
 function App() {
   return (
