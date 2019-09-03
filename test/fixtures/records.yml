@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  year: MyString
+  revenue: 1
+  eps: 1.5
+  book: 1.5
+  op_cash: 1
+  roic: 1.5
+  pe: 1.5
+  company: one
+
+two:
+  year: MyString
+  revenue: 1
+  eps: 1.5
+  book: 1.5
+  op_cash: 1
+  roic: 1.5
+  pe: 1.5
+  company: two
