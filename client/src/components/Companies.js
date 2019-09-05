@@ -15,6 +15,11 @@ class Companies extends React.Component{
     })
   }
 
+  addCompany =(companyData) =>{
+    let company = {...companyData, }
+    this.setState({companies: [company, ...this.state.companies]})
+  }
+
   renderCompanies = () => {
     const {companies} = this.state
 
@@ -36,7 +41,7 @@ class Companies extends React.Component{
         <Header>Companies</Header>
         <hr />
         <Button>Add Company</Button>
-        <CompanyForm/>
+        <CompanyForm add={this.addCompany}/>
         <Card.Group>
           {this.renderCompanies()}
         </Card.Group>
