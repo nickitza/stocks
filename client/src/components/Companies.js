@@ -1,6 +1,7 @@
 import React from 'react';
-import {Container, Header, Card, } from "semantic-ui-react";
+import {Container, Header, Card, Button} from "semantic-ui-react";
 import axios from "axios"
+import CompanyForm from "./CompanyForm"
 
 class Companies extends React.Component{
   state = {companies: [], }
@@ -34,6 +35,8 @@ class Companies extends React.Component{
       <Container>
         <Header>Companies</Header>
         <hr />
+        <Button>Add Company</Button>
+        <CompanyForm/>
         <Card.Group>
           {this.renderCompanies()}
         </Card.Group>
