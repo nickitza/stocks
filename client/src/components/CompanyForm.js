@@ -8,8 +8,8 @@ class CompanyForm extends React.Component {
     e.preventDefault();
   }
 
-  handleChange = () => {
-
+  handleChange = (e, {name, value}) => {
+    this.setState({ [name]: value})
   }
 
   render(){
